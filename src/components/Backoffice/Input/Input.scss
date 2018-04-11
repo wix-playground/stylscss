@@ -1,0 +1,233 @@
+//Colors
+/* DARK - Primary */
+$D10: #162d3d; /* Primary Text */
+$D20: #32536A; /* Secondary Text */
+$D30: #577083;
+$D40: #7a92a5; /* Placeholder Text */
+$D50: #b6c1cd; /* Disabled - Text + System Icons */
+$D55: #cbd3dc; /* Disabled button - new version */
+$D60: #dfe5eb; /* Dividers, Disabled - Borders */
+$D70: #f0f4f7; /* Page Background, Disabled - Background */
+$D80: #ffffff; /* Content box background */
+
+/* BLUE - Brand */
+$B00: #2b81cb; /* Button Focus */
+$B10: #3899ec; /* Main, Button */
+$B20: #4eb7f5; /* Hover for elements with B10, buttons, Notifications */
+$B25: #A1D7FB;
+$B27: #b3e0fb;
+$B30: #c1e4fe;
+$B40: #daeffe;
+$B50: #eaf7ff;
+$B60: #f4fafe;
+
+/* PURPLE - Premium */
+$P00: #8e21b1;
+$P10: #aa4dc8;
+$P20: #cd68ed;
+$P30: #e5c9ee;
+$P40: #eedbf4;
+$P50: #FAEEFF;
+$P60: #FAF7FC;
+
+/* ORANGE - Used ONLY in Labels */
+$O00: #ea5f0e;
+$O10: #fb7d33;
+$O20: #ff9a48;
+
+/* RED - Danger or Destructive */
+$R00: #d6453d;
+$R10: #ee5951; /* Main, Destructive Button */
+$R20: #ff6666; /* Notifications */
+$R30: #ffd7d7;
+$R40: #ffe1e1;
+$R50: #ffebeb;
+$R60: #fff5f5;
+
+/* GREY - disabled */
+$GR10: #c8c8c8; /* Disabled buttons */
+$GR20: #dadada; /* Disabled fields */
+$GR30: #f1f1f1; /* Disabled background */
+$GR40: #cbd3dc; /* Disabled button - new version - naming not final */
+$GR50: #eff1f2;
+$GR60: #a3abb0; /* placeholder for InputArea theme="amaterial" */
+
+/* GREEN - Success */
+$G00: #44823f;
+$G10: #60bc57; /* Main, Button */
+$G20: #80c979; /* Notifications */
+$G30: #c9eebc;
+$G40: #DEF4D4;
+$G50: #EDF9E5;
+$G60: #f2fbef;
+
+/* YELLOW - Warning */
+$Y00: #c68801;
+$Y10: #fdb10c; /* Notification */
+$Y20: #fac249;
+$Y30: #fef0ba;
+$Y40: #fef4cd;
+$Y50: #fdf7df;
+$Y60: #FFFCF0;
+
+/* GREY - Disabled */
+$GR30: #f1f1f1;
+$GR20: #dadada;
+$GR10: #c8c8c8;
+$GR40: #cbd3dc;
+$GR50: #eff1f2;
+$GR60: #a3abb0;
+/* Focus */
+$F00: #aadbfc;
+
+/* Helpers */
+$TRANSPARENT: transparent;
+$WHITE: #ffffff;
+$BLACK: #000000;
+
+
+//Palette
+$backgroundPrimary: $D70;
+$backgroundSecondary: $WHITE;
+$brandPrimary: $B10;
+$brandSecondary: $D10;
+$disabled: $D50;
+$focus: $B00;
+$main: $B10;
+$success: $G10;
+$warning: $Y10;
+$danger: $R10;
+$premium: $P10;
+$urgent: $O10;
+$standard: $B20;
+$general: $D20;
+$neutral: $D40;
+$mainHover: $B20;
+$successHover: $G20;
+$warningHover: $Y20;
+$dangerHover: $R20;
+$premiumHover: $P20;
+$mainMuted: $B40;
+$mainMutedBackground: $B50;
+$successMuted: $G40;
+$warningMuted: $Y40;
+$dangerMuted: $R40;
+$premiumMuted: $P40;
+$mainMutedHover: $B30;
+$successMutedHover: $G30;
+$warningMutedHover: $Y30;
+$dangerMutedHover: $R30;
+$premiumMutedHover: $P30;
+$disabledField: $GR20;
+$disabledCheck: $D50;
+
+//Input Colors
+$inputBackground: $backgroundSecondary;
+$inputBorderColor: $mainMutedHover;
+$inputHover: $mainMutedBackground;
+$inputFocusBorderColor: $mainHover;
+$inputDisabledColor: $D55;
+$inputDisabledBorderColor: $D60;
+$inputDisabledHoverBorderColor: $GR20;
+
+/* typography */
+$primaryText: $D10;
+$secondaryText: $D20;
+$placeholderText: $D40;
+$disabledText: $D50;
+$primaryLightText: $WHITE;
+$secondaryLightText: $D50;
+$linkedText: $brandPrimary;
+$linkedTextHover: $brandPrimary;
+$headingText: $primaryText;
+$subheadingText: $secondaryText;
+$lightHeadingText: $primaryLightText;
+$lightSubheadingText: $disabledText;
+
+/* layout */
+$cardBackground: $backgroundSecondary;
+$dividerColor: $D60;
+
+/* shadow-box */
+$focusShadow: $F00;
+
+
+//Input
+$inputBorderColor: $mainMutedHover;
+$inputBackground: $backgroundSecondary;
+$inputHover: $mainMutedBackground;
+
+//typo
+$fontsFallback: "Helvetica Neue", "Helvetica", "Arial", "メイリオ", "meiryo", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", "sans-serif";
+
+$fontUltraThin: "HelveticaNeueW01-UltLt", "HelveticaNeueW02-UltLt", "HelveticaNeueW10-25UltL", $fontsFallback;
+$fontThin: "HelveticaNeueW01-Thin", "HelveticaNeueW02-Thin", "HelveticaNeueW10-35Thin", $fontsFallback;
+$fontLight: "HelveticaNeueW01-45Ligh", "HelveticaNeueW02-45Ligh", "HelveticaNeueW10-45Ligh", $fontsFallback;
+$fontRoman: "HelveticaNeueW01-55Roma", "HelveticaNeueW02-55Roma", "HelveticaNeueW10-55Roma", $fontsFallback;
+$fontMedium: "HelveticaNeueW01-65Medi", "HelveticaNeueW02-65Medi", "HelveticaNeueW10-65Medi", $fontsFallback;
+$fontBold: "HelveticaNeueW01-75Bold", "HelveticaNeueW02-75Bold", "HelveticaNeueW10-75Bold", $fontsFallback;
+
+//Input sizes
+$inputHeightMap: (large: 60px, medium: 36px, small: 30px);
+$inputFontMap: (large: 22px, medium: 16px, small: 14px);
+
+@mixin inputSize($size) {
+  height: map-get($inputHeightMap, $size);
+  line-height: map-get($inputHeightMap, $size) - 2px;
+  font-size: map-get($inputFontMap, $size);
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  color: $primaryText;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid $inputBorderColor;
+  background-color: $inputBackground;
+  padding: 0 6px;
+}
+
+.root:hover {
+  background-color: $inputHover;
+}
+
+.root[data-disabled] {
+  color: $inputDisabledColor;
+  border-color: $inputDisabledBorderColor;
+}
+
+.root[data-disabled]:hover {
+  background-color: $inputBackground;
+  border-color: $inputDisabledHoverBorderColor;
+}
+
+.nativeInput {
+  composes: nativeInput from "../../Core/Input/Input.scss";
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  font-family: $fontRoman;
+  border: none;
+  padding: 0 6px;
+}
+
+.root[data-size-large] {
+  .nativeInput {
+    @include inputSize('large')
+  }
+}
+
+.root[data-size-medium] {
+  .nativeInput {
+    @include inputSize('medium')
+  }
+}
+
+.root[data-size-small] {
+  .nativeInput {
+    @include inputSize('small')
+  }
+}
