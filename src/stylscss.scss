@@ -1,0 +1,8 @@
+$styleState: data-style;
+@function cssState($key) {
+  @return '['+$styleState+'-'+$key+']';
+}
+
+@function cssCustomState($key, $value) {
+  @return '['+$styleState+'-'+$key+'-'+$value+']';
+}

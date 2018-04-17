@@ -1,34 +1,24 @@
 import React from 'react';
-import CSSModules from 'react-css-modules';
+import cssModules from 'react-css-modules';
 import styles from './Input.scss';
-
-const getDataStates = props => {
-  return Object.entries(props)
-    .filter(([key]) => key.startsWith('data-'))
-    .reduce((acc, [key, val]) => {
-      acc[key] = val;
-      return acc;
-    }, {});
-};
-
-const getMoreDataStates = props => {
-  return Object.entries(props)
-    .reduce((acc, [key, val]) => {
-      acc[`data-${key}`] = val;
-      return acc;
-    }, {});
-};
+import PropTypes from 'prop-types';
+import {getDataAttributes, getCssStates} from '../../../stylscss';
 
 const RawInput = props => {
   const {styles, ...rest} = props;
-  const dataStates = getDataStates(props);
-  const moreDataStates = getMoreDataStates({disabled: props.disabled});
+  const dataAttributes = getDataAttributes(props);
+  const cssStates = getCssStates({disabled: props.disabled});
 
   return (
-    <div className={styles.root} {...dataStates} {...moreDataStates}>
+    <div className={styles.root} {...dataAttributes} {...cssStates}>
       <input {...rest} className={styles.nativeInput}/>
     </div>
   );
 };
 
-export const Input = CSSModules(RawInput, styles);
+RawInput.propTypes = {
+  styles: PropTypes.object,
+  disabled: PropTypes.bool
+};
+
+export const Input = cssModules(RawInput, styles);
