@@ -10,11 +10,10 @@ export function getDataAttributes(props) {
 }
 
 export function generateCssStates(states) {
-  return Object.entries(states)
-    .reduce((acc, [key, val]) => {
-      acc[`${cssState}${key}`] = val;
-      return acc;
-    }, {});
+  return Object.entries(states).reduce((acc, [key, val]) => {
+    acc[`${cssState}${key}`] = val;
+    return acc;
+  }, {});
 }
 
 export function mapPropsToCSSStates(props, statesNames = []) {

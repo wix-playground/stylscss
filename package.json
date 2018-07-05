@@ -26,7 +26,8 @@
     "puppeteer": "^1.1.0",
     "react-test-renderer": "~15.6.0",
     "velocity": "~0.7.0",
-    "yoshi": "^1.2.0"
+    "yoshi": "^3.0.0",
+    "yoshi-style-dependencies": "^3.0.0"
   },
   "dependencies": {
     "axios": "~0.16.0",
@@ -48,10 +49,10 @@
   },
   "babel": {
     "presets": [
-      "wix"
+      "yoshi"
     ]
   },
   "eslintConfig": {
-    "extends": "wix/react"
+    "extends": "yoshi"
   }
 }
